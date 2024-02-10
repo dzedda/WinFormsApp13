@@ -10,6 +10,7 @@ namespace WinFormsApp13
     {
         string valore;
         Nodo successivo;
+        
         public Nodo(string Valore)
         {
             valore = Valore;            
@@ -17,7 +18,8 @@ namespace WinFormsApp13
 
         public string Valore
         {
-            get { return valore; }            
+            get { return valore; } 
+            set { valore = value; }
         }   
 
         public Nodo Successivo

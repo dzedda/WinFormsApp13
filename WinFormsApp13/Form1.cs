@@ -21,10 +21,20 @@ namespace WinFormsApp13
             Nodo x = elenco.Inizio;
             listBox1.Items.Add(x.Valore);
             while (x.Successivo != null)
-            {                
+            {
                 x = x.Successivo;
                 listBox1.Items.Add(x.Valore);
-            }             
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            elenco.serializza();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            elenco = Lista.Deserializza();
         }
     }
 }
